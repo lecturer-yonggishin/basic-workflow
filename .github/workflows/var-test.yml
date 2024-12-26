@@ -1,0 +1,10 @@
+name: Vars context
+on:
+  workflow_dispatch
+
+jobs:
+  inputs_variable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check Var Variable"
+        run: echo "Hello, ${{ vars.TEST }}"
